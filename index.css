@@ -1,8 +1,17 @@
 .form,
 .greetings {
-    display: none;
+  display: none;
 }
 
 .showing {
-    display: block;
+  display: block;
+}
+button {
+  /* border: 0;
+  outline: 0; */
+  background-color: white;
+  /* margin-right: 5px; */
+}
+li {
+  list-style: none;
 }
