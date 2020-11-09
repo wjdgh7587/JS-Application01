@@ -17,7 +17,6 @@ function paintToDo(text) {
   delBtn.innerHTML = "delete"; //❎
   const span = document.createElement("span");
   span.innerText = text + " ";
-  var span2 = "";
   li.appendChild(span);
   li.appendChild(commitBtn);
   li.appendChild(delBtn);
