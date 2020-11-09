@@ -20,7 +20,6 @@ function paintToDo(text) {
   var span2 = "";
   li.appendChild(span);
   li.appendChild(commitBtn);
-  li.appendChild(span2);
   li.appendChild(delBtn);
   toDoList.appendChild(li);
 }
