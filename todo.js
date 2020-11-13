@@ -10,22 +10,35 @@ var TODO_LS = "toDos";
 var TODO_ARRAY = [];
 
 //function of edit
+//하핳ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ
+//ㄴ아러니ㅏ어라ㅣ머;ㅣㅏㅇㄴ러ㅣ;멎ㄴ디ㅏ러미;ㄴ어리;머니알
+//ㅁㄴ이;러미ㅏ넝리ㅏㅓㅁ;ㅣㅏㄴ어라;ㅣ먼이ㅏ러마ㅣㄴㅇㄹ
+
+function handleEdit(event) {
+  var currentValue = event;
+  const toDoClean = TODO_ARRAY.filter(function (toDoList) {
+    //console.log(delBtnList.id, toDoList.id);
+
+    return toDoList.id !== parseInt(delBtnList.id);
+  });
+}
 
 function editToDo(event) {
   const editBtnList = event.target.parentNode;
   const currentValue = editBtnList.childNodes[2].textContent;
-  const getIdValue = editBtnList.id;
+  //const getIdValue = editBtnList.id;
 
   const listItem = this.parentNode;
-  const listText = listItem.querySelector("span");
+  //const listText = listItem.querySelector("span");
 
   //const span = document.querySelector("span").textContent;
-  const checkingTag = listItem.innerText;
+  //const checkingTag = listItem.innerText;
   //innerText 자식의 모든 텍스트 표시
 
   toDoInput.value = currentValue;
+  handleEdit(currentValue);
 
-  console.log(checkingTag);
+  //console.log(checkingTag);
 }
 
 //function of delete
@@ -59,8 +72,8 @@ function paintToDo(text) {
   delBtn.addEventListener("click", deleteToDo);
   var toDoId = TODO_ARRAY.length + 1;
 
-  editBtn.innerHTML = "✏️";
-  delBtn.innerHTML = "❎";
+  editBtn.innerHTML = "EDIT";
+  delBtn.innerHTML = "DELETE";
   const span = document.createElement("span");
   span.innerText = text;
 
