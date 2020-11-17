@@ -1,6 +1,6 @@
 //Using query Selector
 const clockContainer = document.querySelector(".js-clock"),
-  clockTitle = clockContainer.querySelector(".js-title");
+    clockTitle = clockContainer.querySelector(".js-title");
 
 //Using getElementsBySomething Method
 const clockContainerTest = document.getElementsByClassName("js-title");
@@ -10,14 +10,14 @@ console.log(clockContainer);
 console.log(clockTitle);
 //clockTitle = clockContainer.querySelector("h1");
 function getTime() {
-  const date = new Date();
-  const minutes = date.getMinutes();
-  const seconds = date.getSeconds();
-  const hours = date.getHours();
+    const date = new Date();
+    const minutes = date.getMinutes();
+    const seconds = date.getSeconds();
+    const hours = date.getHours();
 
-  console.log(date);
+    //console.log(date);
 
-  clockTitle.innerText = `${hours < 10 ? `0${hours}` : hours}:${
+    clockTitle.innerText = `${hours < 10 ? `0${hours}` : hours}:${
     minutes < 10 ? `0${minutes}` : minutes
   }:${
     seconds < 10 ? `0${seconds}` : seconds
