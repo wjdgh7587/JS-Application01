@@ -6,6 +6,9 @@ Application01 using JS
 
 - Clock Function
 - ToDoList Function
+  - ToDoList Delete func succeeded
+  - ToDoList insert func succeeded
+  - ToDOList Update func failed
 - Random wallpaper function
 - Geographical mapping function
 

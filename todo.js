@@ -6,16 +6,10 @@ const toDoForm = document.querySelector(".js-toDoForm"),
 // console.log(input);
 // console.log(toDoList);
 
-
-
 var TODO_LS = "toDos";
 var TODO_ARRAY = [];
 
 //function of edit
-//하핳ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ
-//ㄴ아러니ㅏ어라ㅣ머;ㅣㅏㅇㄴ러ㅣ;멎ㄴ디ㅏ러미;ㄴ어리;머니알
-//ㅁㄴ이;러미ㅏ넝리ㅏㅓㅁ;ㅣㅏㄴ어라;ㅣ먼이ㅏ러마ㅣㄴㅇㄹ
-
 //function of keyup
 
 function keyupTest(event) {
