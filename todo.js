@@ -66,6 +66,8 @@ function saveToDos() {
     //What is Json??
 }
 
+
+
 //Paint to the Screen
 function paintToDo(text) {
     //console.log(text);
@@ -129,6 +131,8 @@ function init() {
 }
 
 init();
+
+//init() 함수나, 펑션, 메소드가 처음 시작될때 발동되는 메소드, 함수
 
 // const todos = ["apple", "jeongho", "chocoloate", "babyboy"];
 // const jeonghoIndex = todos.indexOf("jeongho");
