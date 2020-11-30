@@ -20,7 +20,7 @@ function getWeather(lat, lon) {
       const temp_min = json.main.temp_min;
       const i = document.createElement("i");
 
-      //   console.log(json);
+      console.log(json);
       //   console.log(temp);
       //   console.log(place);
       //   console.log(weather);

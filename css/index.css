@@ -11,8 +11,6 @@ body {
   background-color: #636e72;
 }
 
-
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -32,4 +30,7 @@ body {
   z-index: -1;
   /* z-index 위치 지정 */
   animation: fadeIn 2s linear;
+}
+.navbar-brand {
+  color: white;
 }
